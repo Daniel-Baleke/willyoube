@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="Password" id="user_password" placeholder="Password" required>
+            </div>
+
+            <button type="button" onclick="login ()" id="submit" class="btn" value="Login">Login</button>
+        
+            
+        </form>
+    </div>
+
+<script>
+
+function login(){
+
+let usarname = document.getElementById("username").value
+let password2 = document.getElementById("user_password").value
+
+let website_username = "Orethabisitse"
+let website_password = "Thabi"
+
+if( usarname == website_username && password2 == website_password){
+
+window.location = "envelope.html"
+
+}
+}
+</script>
+</body>
+</html>
